@@ -10,6 +10,7 @@ export const StyledNav = styled.nav`
   height: 10vh;
   position: fixed;
   top: 0;
+  transition: background-color 0.3s ease-in-out;
 
   & > div {
     flex: 1;
@@ -30,4 +31,10 @@ export const StyledNavLinks = styled.a`
   padding: 10px;
   color: #fff;
   text-decoration: none;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scaleX(1.15);
+    border-bottom: 3px solid #fff;
+  }
 `;

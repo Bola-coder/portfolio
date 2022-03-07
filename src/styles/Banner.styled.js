@@ -7,32 +7,33 @@ export const StyledBanner = styled.section`
   background-image: url(${bgImage});
   background-size: cover;
   margin-top: 10vh;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
 
   & > div {
-    flex: 1;
-    // margin-top: 90px;
     padding: 30px;
+    margin-left: 40px;
   }
 
   h1 {
-    font-size: 6rem;
+    margin-top: 10%;
+    font-size: 4rem;
     color: ${({ theme }) => theme.colors.nav_text};
   }
 
   p {
-    font-size: 2.7rem;
+    font-size: 2rem;
     color: ${({ theme }) => theme.colors.nav_text};
   }
-  span {
-    margin-right: 100px;
-  }
+  // span {
+  //   margin-right: 100px;
+  // }
 
-  img {
-    width: 450px;
-    height: 450px;
-    // border: 8px solid #fff;
-    border-radius: 3%;
-  }
+  // img {
+  //   width: 450px;
+  //   height: 350px;
+  //   border: 3px solid #fff;
+  //   border-radius: 50px;
+  // }
 `;
