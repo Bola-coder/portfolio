@@ -15,13 +15,14 @@ export const AboutContent = styled.div`
   }
 
   p {
+    padding: 5px;
     font-size: 1.3rem;
   }
   img {
     width: 350px;
-    height: 400px;
+    height: 380px;
     border: 3px solid #fff;
-    box-shadow: 4px 3px 10px 1px #aaa;
+    box-shadow: 1px 1px 5px 1px #aaa;
     // border-radius: 50%;
     border-radius: 3%;
     margin-left: 30px;
