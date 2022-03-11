@@ -10,7 +10,9 @@ export const StyledNav = styled.nav`
   height: 10vh;
   position: fixed;
   top: 0;
+  max-width: 100vw;
   transition: background-color 0.3s ease-in-out;
+  z-index: 10;
 
   & > div {
     flex: 1;

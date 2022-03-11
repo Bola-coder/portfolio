@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import { AboutContent, StyledAbout } from "../styles/About.styled";
-import myImage from "./../images/my-image.jpg";
+import myImage from "./../images/my-image2.jpg";
 
 const About = () => {
   return (

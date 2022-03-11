@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import "./app.css";
 
 function App() {
   const [show, setShow] = useState(null);

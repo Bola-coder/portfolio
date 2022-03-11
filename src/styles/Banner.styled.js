@@ -3,7 +3,7 @@ import bgImage from "./../images/background-image-one.jpg";
 
 export const StyledBanner = styled.section`
   height: 90vh;
-  width: 100vw;
+  max-width: 100vw;
   background-image: url(${bgImage});
   background-size: cover;
   margin-top: 10vh;
