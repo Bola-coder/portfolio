@@ -14,6 +14,7 @@ export const StyledResumeLink = styled.a`
   text-decoration: none;
   font-style: italic;
   font-size: 1rem;
+  font-weight: bolder;
   letter-spacing: 2px;
   border: none;
   border-radius: 10px;

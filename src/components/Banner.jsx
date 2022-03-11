@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledBanner } from "../styles/Banner.styled";
 import { Button } from "../styles/Button.styled";
-import myImage from "./../images/bg-img-two.jpg";
+// import myImage from "./../images/bg-img-two.jpg";
 
 const Banner = () => {
   return (

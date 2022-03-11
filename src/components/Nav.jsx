@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import { StyledNav, StyledNavLinks } from "../styles/nav.styled";
 
 const NavBar = () => {
