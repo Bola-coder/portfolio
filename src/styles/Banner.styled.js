@@ -4,12 +4,13 @@ import bgImage from "./../images/background-image-one.jpg";
 export const StyledBanner = styled.section`
   height: 90vh;
   max-width: 100vw;
-  background-image: url(${bgImage});
-  background-size: cover;
+  background-color: #000;
+  // background-image: url(${bgImage});
+  // background-size: cover;
   margin-top: 10vh;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   & > div {
     padding: 30px;
@@ -17,23 +18,26 @@ export const StyledBanner = styled.section`
   }
 
   h1 {
-    margin-top: 10%;
+    margin-top: 7%;
     font-size: 4rem;
     color: ${({ theme }) => theme.colors.nav_text};
   }
 
   p {
+    margin-top: 10px;
     font-size: 2rem;
     color: ${({ theme }) => theme.colors.nav_text};
-  }
-  // span {
-  //   margin-right: 100px;
-  // }
 
-  // img {
-  //   width: 450px;
-  //   height: 350px;
-  //   border: 3px solid #fff;
-  //   border-radius: 50px;
-  // }
+    & > span {
+      color: rgb(8, 92, 172);
+    }
+  }
+
+  & > span {
+    flex-basis: 40%;
+  }
+
+  img {
+    width: 80%;
+  }
 `;

@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <StyledNav>
       <div>
-        <p>ABATOMS</p>
+        <p>BOLARINWA</p>
       </div>
       <StyledNavLinks href="#">About</StyledNavLinks>
       <StyledNavLinks href="#">Resume</StyledNavLinks>

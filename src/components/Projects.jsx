@@ -9,8 +9,8 @@ const Projects = () => {
   let { loading, error, data } = useFetch(url);
   return (
     <>
-      <StyledHeading>My Projects</StyledHeading>
       <StyledProjects>
+        <StyledHeading>My Projects</StyledHeading>
         <ProjectDetails projects={data} loading={loading} error={error} />
       </StyledProjects>
     </>

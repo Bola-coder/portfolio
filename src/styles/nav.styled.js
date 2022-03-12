@@ -19,7 +19,7 @@ export const StyledNav = styled.nav`
   }
 
   p {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin-left: 20px;
     color: #fff;
     font-weight: bolder;
@@ -27,7 +27,7 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledNavLinks = styled.a`
-  font-size: 1.2rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   margin-right: 40px;
   padding: 10px;

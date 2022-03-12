@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Netflix Clone",
-      "tags": ["react", "clone"],
+      "tags": ["React", "Clone"],
       "image": "/images/netflix-clone.png",
       "description": "A clone of Netflix Webapp that fetches latest movies from an external API",
       "liveLink": "https://abatoms-netflix-clone.netlify.app/",
@@ -12,7 +12,7 @@
 
     {
       "name": "TexChange",
-      "tags": ["react", "web-app"],
+      "tags": ["React", "Web-app"],
       "image": "/images/texchange.png",
       "description": "A Currency converter web application that uses currency API to convert currencies",
       "liveLink": "https://texchange.netlify.app/",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Sneakers",
-      "tags": ["react", "Webapp"],
+      "tags": ["React", "Web-app"],
       "image": "/images/planktops.png",
       "description": "A Sneakers E-commerce Store and they can be added to cart once user is authenticated",
       "liveLink": "https://sneakers.netlify.app",
@@ -30,7 +30,7 @@
     },
     {
       "name": "Twitter Clone",
-      "tags": ["react", "clone"],
+      "tags": ["React", "Clone"],
       "image": "/images/twitter-clone.png",
       "description": "A clone of Twitter Webapp with messaging capabilities using firebase firestore",
       "liveLink": "https://twitter-clone-90ea9.web.app/",
@@ -40,7 +40,7 @@
 
     {
       "name": "Recipea",
-      "tags": ["react", "Webapp"],
+      "tags": ["React", "Web-app"],
       "image": "/images/recipea.png",
       "description": "Website for looking up recipes. Search function is also included",
       "liveLink": "https://abatoms-recipe-app.netlify.app/",
@@ -49,7 +49,7 @@
     },
     {
       "name": "Planktops",
-      "tags": ["vue", "website"],
+      "tags": ["Vue", "Website"],
       "image": "/images/planktops.png",
       "description": "A simple website for a furniture / carpentry  business",
       "liveLink": "https://planktops.netlify.app/",

@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.section`
   paddding: 30px;
-  margin-top: 6%;
+  margin-top: 10%;
 `;
 
 export const AboutContent = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 
   & > div {
