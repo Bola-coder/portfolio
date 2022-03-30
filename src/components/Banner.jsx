@@ -16,7 +16,7 @@ const Banner = () => {
           <Button>Contact Me</Button>
         </div>
         <span>
-          <img src={bannerImg} alt="3d " />
+          <img src={bannerImg} alt="3d" />
         </span>
       </StyledBanner>
     </>

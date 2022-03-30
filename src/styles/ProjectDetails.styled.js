@@ -7,24 +7,28 @@ export const StyledDetails = styled.div`
   flex-wrap: wrap;
   background-color: #000;
   color: #fff;
-  padding: 30px;
+  padding: 20px;
   margin-top: 10px;
 
   & > div {
     margin: 20px;
-    width: 300px;
-    // padding: 20px;
+    width: 270px;
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px #333;
     transition: transform 0.3s ease-in;
 
+    @media screen and (max-width: 1024px) {
+      width: 250px;
+    }
+
     & > img {
       width: inherit;
       border-radius: 20px;
+      height: 200px;
     }
 
     & > div.text {
-      padding: 20px;
+      padding: 10px;
 
       & > svg {
         margin-top: 20px;
@@ -49,7 +53,9 @@ export const StyledDetails = styled.div`
     }
 
     &:hover {
-      transform: scaleX(1.03);
+      transform: scale(1.05);
+      background-color: #fff;
+      color: #000;
     }
   }
 `;

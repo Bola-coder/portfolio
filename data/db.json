@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "TexBuy",
+      "tags": ["React", "Web-app"],
+      "image": "/images/sneakers.png",
+      "description": "A product E-commerce Store where products be added to cart once user is authenticated",
+      "liveLink": "https://texbuy.netlify.app",
+      "githubLink": "https://github.com/Bola-coder/Sneakers",
+      "author": "Ahmed Bolarinwa"
+    },
+    {
       "name": "Netflix Clone",
       "tags": ["React", "Clone"],
       "image": "/images/netflix-clone.png",
@@ -19,15 +28,7 @@
       "githubLink": "https://github.com/Bola-coder/Xchange",
       "author": "Ahmed Bolarinwa"
     },
-    {
-      "name": "Sneakers",
-      "tags": ["React", "Web-app"],
-      "image": "/images/planktops.png",
-      "description": "A Sneakers E-commerce Store and they can be added to cart once user is authenticated",
-      "liveLink": "https://sneakers.netlify.app",
-      "githubLink": "https://github.com/Bola-coder/Sneakers",
-      "author": "Ahmed Bolarinwa"
-    },
+
     {
       "name": "Twitter Clone",
       "tags": ["React", "Clone"],

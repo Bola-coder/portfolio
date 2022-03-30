@@ -28,6 +28,7 @@ const useFetch = (url) => {
       controller.abort();
     };
   }, [url]);
+
   return { loading, error, data };
 };
 

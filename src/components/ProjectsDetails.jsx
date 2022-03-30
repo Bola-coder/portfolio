@@ -3,7 +3,6 @@ import { FaGithub, FaArrowAltCircleRight } from "react-icons/fa";
 import { StyledDetails, TagNames } from "../styles/ProjectDetails.styled";
 
 const ProjectDetails = ({ loading, error, projects }) => {
-  console.log(projects);
   return (
     <>
       <StyledDetails>

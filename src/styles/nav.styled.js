@@ -26,14 +26,28 @@ export const StyledNav = styled.nav`
   }
 `;
 
+export const NavLinks = styled.span`
+  flex-basis: 55%;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    display: none;
+  }
+`;
+
 export const StyledNavLinks = styled.a`
   font-size: 1rem;
   letter-spacing: 2px;
-  margin-right: 40px;
+  // margin-right: 40px;
   padding: 10px;
   color: #fff;
   text-decoration: none;
   transition: transform 0.5s;
+
+  @media screen and (max-width: 768px) {
+  }
 
   &:hover {
     transform: scaleX(1.15);

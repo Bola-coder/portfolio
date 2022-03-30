@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import "./app.css";
+import Work from "./components/Work";
 
 function App() {
   const [show, setShow] = useState(null);
@@ -34,6 +35,7 @@ function App() {
         <Banner />
         <About />
         <Projects />
+        <Work />
       </>
     </ThemeProvider>
   );

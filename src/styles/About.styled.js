@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.section`
-  paddding: 30px;
+  padding: 10px;
   margin-top: 10%;
 `;
 
@@ -16,7 +16,7 @@ export const AboutContent = styled.div`
 
   p {
     padding: 5px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   img {
     width: 100%;
@@ -26,5 +26,9 @@ export const AboutContent = styled.div`
     // border-radius: 50%;
     border-radius: 3%;
     margin-left: 30px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 5px;
   }
 `;

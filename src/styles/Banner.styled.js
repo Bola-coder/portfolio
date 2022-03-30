@@ -1,12 +1,10 @@
 import styled from "styled-components";
-import bgImage from "./../images/background-image-one.jpg";
 
 export const StyledBanner = styled.section`
   height: 90vh;
   max-width: 100vw;
   background-color: #000;
-  // background-image: url(${bgImage});
-  // background-size: cover;
+
   margin-top: 10vh;
   display: flex;
   justify-content: space-between;
@@ -39,5 +37,28 @@ export const StyledBanner = styled.section`
 
   img {
     width: 80%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > div {
+      padding: 10px;
+    }
+
+    h1 {
+      margin-top: 3%;
+      font-size: 4.2rem;
+    }
+
+    & > span {
+      flex-basis: 60%;
+      // background: green;
+    }
+    img {
+      width: 400px;
+    }
   }
 `;
