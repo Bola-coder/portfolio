@@ -17,4 +17,9 @@ export const Button = styled.button`
     border: 3px solid rgb(8, 92, 172);
     transform: scaleX(0.97);
   }
+
+  @media screen and (max-width: 425px) {
+    padding: 13px 15px;
+    font-size: 1.3rem;
+  }
 `;

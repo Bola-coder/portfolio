@@ -39,10 +39,10 @@ export const StyledBanner = styled.section`
     width: 80%;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     & > div {
       padding: 10px;
@@ -55,10 +55,40 @@ export const StyledBanner = styled.section`
 
     & > span {
       flex-basis: 60%;
-      // background: green;
     }
     img {
-      width: 400px;
+      width: 550px;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    h1 {
+      margin-top: 3%;
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+
+    img {
+      width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    & > span {
+      flex-basis: 50%;
+    }
+    h1 {
+      margin-top: 3%;
+      font-size: 2.7rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+
+    img {
+      width: 300px;
     }
   }
 `;
