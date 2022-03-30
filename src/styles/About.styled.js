@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const StyledAbout = styled.section`
   padding: 10px;
   margin-top: 10%;
+
+  @media screen and (max-width: 1024px) {
+    padding: 5px;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -16,7 +20,7 @@ export const AboutContent = styled.div`
 
   p {
     padding: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   img {
     width: 100%;
@@ -28,7 +32,19 @@ export const AboutContent = styled.div`
     margin-left: 30px;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     padding: 5px;
+    flex-direction: column;
+
+    & > span {
+      // order: 1;
+      // margin-top: 30px;
+
+      // img {
+      //   height: 100%;
+      //   border-radius: 40%;
+      // }
+      display: none;
+    }
   }
 `;

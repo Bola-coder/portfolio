@@ -31,7 +31,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
-        <NavBar />
+        {/* <NavBar /> */}
         <Banner />
         <About />
         <Projects />
