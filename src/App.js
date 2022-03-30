@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-// import NavBar from "./components/Nav";
+import NavBar from "./components/Nav";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/Global.styled";
 import Banner from "./components/Banner";
@@ -31,7 +31,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
-        {/* <NavBar /> */}
+        <NavBar />
         <Banner />
         <About />
         <Projects />

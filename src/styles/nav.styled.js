@@ -37,17 +37,29 @@ export const NavLinks = styled.span`
   }
 `;
 
+export const StyledMenu = styled.div`
+  & > svg {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    & > svg {
+      display: block;
+      color: #fff;
+    }
+  }
+`;
+
 export const StyledNavLinks = styled.a`
   font-size: 1rem;
   letter-spacing: 2px;
-  // margin-right: 40px;
-  padding: 10px;
+  padding: 10px 15px;
   color: #fff;
   text-decoration: none;
   transition: transform 0.5s;
 
-  @media screen and (max-width: 768px) {
-  }
+  // @media screen and (max-width: 768px) {
+  // }
 
   &:hover {
     transform: scaleX(1.15);
