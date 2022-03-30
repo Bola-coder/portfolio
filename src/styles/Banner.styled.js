@@ -36,7 +36,13 @@ export const StyledBanner = styled.section`
   }
 
   img {
-    width: 80%;
+    width: 500px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    & > span {
+      flex-basis: 50%;
+    }
   }
 
   @media screen and (max-width: 768px) {

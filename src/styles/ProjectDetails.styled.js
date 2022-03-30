@@ -12,14 +12,10 @@ export const StyledDetails = styled.div`
 
   & > div {
     margin: 20px;
-    width: 270px;
+    width: 300px;
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px #333;
     transition: transform 0.3s ease-in;
-
-    @media screen and (max-width: 1024px) {
-      width: 250px;
-    }
 
     & > img {
       width: inherit;

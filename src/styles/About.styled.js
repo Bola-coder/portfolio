@@ -20,7 +20,7 @@ export const AboutContent = styled.div`
 
   p {
     padding: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   img {
     width: 100%;
