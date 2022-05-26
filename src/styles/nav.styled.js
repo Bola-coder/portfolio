@@ -10,7 +10,7 @@ export const StyledNav = styled.nav`
   height: 10vh;
   position: fixed;
   top: 0;
-  max-width: 100vw;
+  // max-width: 100vw;
   transition: background-color 0.3s ease-in-out;
   z-index: 10;
 
@@ -26,6 +26,21 @@ export const StyledNav = styled.nav`
   }
 `;
 
+export const StyledMenu = styled.div`
+  & > svg {
+    display: none;
+    font-size: 40px;
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    & > svg {
+      display: block;
+      color: #fff;
+    }
+  }
+`;
+
 export const NavLinks = styled.span`
   flex-basis: 55%;
   display: flex;
@@ -34,19 +49,6 @@ export const NavLinks = styled.span`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     display: none;
-  }
-`;
-
-export const StyledMenu = styled.div`
-  & > svg {
-    display: none;
-  }
-
-  @media screen and (max-width: 768px) {
-    & > svg {
-      display: block;
-      color: #fff;
-    }
   }
 `;
 

@@ -15,17 +15,17 @@ const NavBar = () => {
       <div>
         <p>BOLARINWA</p>
       </div>
-      <NavLinks>
-        {/* Mobile Hamburger */}
-        <StyledMenu>
-          <FaHamburger></FaHamburger>
+      {/* Mobile Hamburger */}
+      <StyledMenu>
+        <FaHamburger></FaHamburger>
+        <NavLinks>
           <StyledNavLinks href="#">About</StyledNavLinks>
           <StyledNavLinks href="#">Resume</StyledNavLinks>
           <StyledNavLinks href="#">Projects</StyledNavLinks>
           <StyledNavLinks href="#">Work</StyledNavLinks>
           <StyledNavLinks href="#">Contact</StyledNavLinks>
-        </StyledMenu>
-      </NavLinks>
+        </NavLinks>
+      </StyledMenu>
     </StyledNav>
   );
 };

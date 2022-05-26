@@ -6,6 +6,9 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Work from "./components/Work";
+// Importing Animation library
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./app.css";
 
 function App() {
@@ -17,6 +20,11 @@ function App() {
     return () => {
       window.removeEventListener("scroll");
     };
+  }, []);
+
+  //  Initializing Aos
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
   }, []);
 
   const theme = {
@@ -33,7 +41,7 @@ function App() {
         <GlobalStyle />
         <NavBar />
         <Banner />
-        <About />
+        <About data-aos="fade-up" />
         <Projects />
         <Work />
       </>
