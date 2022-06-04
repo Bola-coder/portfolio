@@ -32,7 +32,7 @@ export const StyledBanner = styled.section`
   }
 
   & > span {
-    flex-basis: 40%;
+    flex-basis: 35%;
   }
 
   img {

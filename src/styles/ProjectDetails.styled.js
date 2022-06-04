@@ -15,12 +15,22 @@ export const StyledDetails = styled.div`
     width: 300px;
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px #333;
-    transition: transform 0.3s ease-in;
+    // transition: transform 0.3s ease-in;
+
+    // &:hover  & > img{
+    //   transform: scale(1.05);
+    // }
 
     & > img {
       width: inherit;
       border-radius: 20px;
       height: 200px;
+      display: inline;
+      transition: transform 0.3s ease-in;
+
+      &:hover {
+        transform: scale(1.02);
+      }
     }
 
     & > div.text {
@@ -46,12 +56,6 @@ export const StyledDetails = styled.div`
 
     p {
       font-size: 0.9rem;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-      // background-color: #fff;
-      // color: #000;
     }
   }
 `;
