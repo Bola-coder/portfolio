@@ -1,6 +1,6 @@
 import React from "react";
 import { StyledResume, StyledResumeLink } from "../styles/Resume.styled";
-import resume from "./../files/resume.pdf";
+import resume from "./../files/new_resume.pdf";
 
 const Resume = () => {
   return (

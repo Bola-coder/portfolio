@@ -6,3 +6,8 @@
 body {
   max-width: 100vw;
 }
+
+.app {
+  background-color: #000;
+  color: #fff;
+}

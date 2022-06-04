@@ -37,14 +37,14 @@ function App() {
   };
   return (
     <ThemeProvider theme={theme}>
-      <>
+      <div className="app">
         <GlobalStyle />
         <NavBar />
         <Banner />
         <About data-aos="fade-up" />
         <Projects />
         <Work />
-      </>
+      </div>
     </ThemeProvider>
   );
 }

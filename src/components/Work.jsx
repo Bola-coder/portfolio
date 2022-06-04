@@ -30,7 +30,7 @@ const Work = () => {
         <StyledWorkDetails>
           {works.map((work, index) => (
             <div key={index}>
-              <img src={work.image} alt="" />
+              {/* <img src={work.image} alt="" /> */}
               <div className="text">
                 <h4>{work.name}</h4>
                 <p>{work.position}</p>

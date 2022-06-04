@@ -2,7 +2,7 @@ import React from "react";
 import Resume from "./Resume";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import { AboutContent, StyledAbout } from "../styles/About.styled";
-import myImage from "./../images/my-image2.jpg";
+import myImage from "./../images/bolarinwa.jpg";
 
 const About = () => {
   return (
@@ -15,7 +15,7 @@ const About = () => {
           <div>
             <StyledHeading align="left">About Me</StyledHeading>
             <p>
-              I am a Frontend developer (aspiring fullstack developer) with 2+
+              I am a Frontend developer (Fullstack developer in view) with 2+
               years of experience developing beautiful and responsive websites.
               A 3rd year computer science student who is passionate about
               technology and its perks, I have been developing websites to solve
