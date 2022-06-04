@@ -50,8 +50,8 @@ export const StyledDetails = styled.div`
 
     &:hover {
       transform: scale(1.05);
-      background-color: #fff;
-      color: #000;
+      // background-color: #fff;
+      // color: #000;
     }
   }
 `;
@@ -59,5 +59,6 @@ export const StyledDetails = styled.div`
 export const TagNames = styled.p`
   margin-top: 10px;
   padding: 7px;
-  color: rgb(8, 92, 172);
+  // color: rgb(8, 92, 172);
+  color: #fff;
 `;

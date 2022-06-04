@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import { Link } from "react-router-dom";
 import { FaHamburger } from "react-icons/fa";
 import {
@@ -9,7 +9,7 @@ import {
 } from "../styles/nav.styled";
 
 const NavBar = () => {
-  const [mobile, showMobile] = useState(false);
+  // const [mobile, showMobile] = useState(false);
   return (
     <StyledNav>
       <div>
