@@ -4,7 +4,6 @@ export const StyledBanner = styled.section`
   height: 90vh;
   max-width: 100vw;
   background-color: #000;
-
   margin-top: 10vh;
   display: flex;
   justify-content: space-between;
@@ -28,6 +27,7 @@ export const StyledBanner = styled.section`
 
     & > span {
       color: rgb(8, 92, 172);
+      font-weight: 700;
     }
   }
 
@@ -36,7 +36,7 @@ export const StyledBanner = styled.section`
   }
 
   img {
-    width: 500px;
+    width: 400px;
   }
 
   @media screen and (max-width: 1024px) {
@@ -46,6 +46,7 @@ export const StyledBanner = styled.section`
   }
 
   @media screen and (max-width: 768px) {
+    height: 50vh;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -60,10 +61,13 @@ export const StyledBanner = styled.section`
     }
 
     & > span {
-      flex-basis: 60%;
+      flex-basis: 50%;
+      margin-top: 80px;
+      margin-left: 30px;
+      display: none;
     }
     img {
-      width: 550px;
+      width: 500px;
     }
   }
 

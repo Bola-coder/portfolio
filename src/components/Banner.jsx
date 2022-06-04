@@ -2,7 +2,7 @@ import React from "react";
 import { StyledBanner } from "../styles/Banner.styled";
 import { Button } from "../styles/Button.styled";
 // import myImage from "./../images/bg-img-two.jpg";
-import bannerImg from "./../images/developer3.png";
+import bannerImg from "./../images/codeImage.png";
 
 const Banner = () => {
   return (
