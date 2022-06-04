@@ -37,13 +37,33 @@ export const AboutContent = styled.div`
 
     & > span {
       // order: 1;
-      // margin-top: 30px;
+      margin-top: 30px;
+      text-align: center;
 
-      // img {
-      //   height: 100%;
-      //   border-radius: 40%;
-      // }
-      display: none;
+      img {
+        // border-radius: 40%;
+        width: 300px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    & > span {
+      margin-left: 0;
+      margin-bottom: 30px;
+      img {
+        width: 290px;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    & > span {
+      img {
+        width: 250px;
+        margin-left: 15px;
+      }
     }
   }
 `;
