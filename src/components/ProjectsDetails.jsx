@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaArrowAltCircleRight } from "react-icons/fa";
 import { StyledDetails, TagNames } from "../styles/ProjectDetails.styled";
 
-const ProjectDetails = ({ loading, error, projects }) => {
+const ProjectDetails = ({ projects }) => {
   return (
     <>
       <StyledDetails>
