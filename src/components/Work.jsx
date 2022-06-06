@@ -29,7 +29,7 @@ const Work = () => {
   return (
     <React.Fragment>
       <StyledWorks>
-        <StyledHeading>Work Experience</StyledHeading>
+        <StyledHeading>Experience</StyledHeading>
         <StyledWorkDetails>
           {works.map((work, index) => (
             <div key={index}>

@@ -17,9 +17,9 @@ const ProjectDetails = ({ projects }) => {
             slidesPerView: 2,
           },
 
-          1024: {
-            slidesPerView: 3,
-          },
+          // 1024: {
+          //   slidesPerView: 3,
+          // },
         }}
         // loop={true}
         // autoplay={{

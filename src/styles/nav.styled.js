@@ -18,6 +18,12 @@ export const StyledNav = styled.nav`
   }
 
   p {
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
+    font-family: "Fira Code", monospace;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Yuji Hentaigana Akebono", cursive;
     font-size: 1.5rem;
     margin-left: 20px;
     color: ${({ theme }) => theme.colors.nav_text};
@@ -44,6 +50,7 @@ export const NavLinks = styled.span`
   flex-basis: 55%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

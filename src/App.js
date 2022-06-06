@@ -18,6 +18,8 @@ function App() {
       heading_text: "rgb(8, 92, 172)",
       nav_text: light ? "rgb(8, 92, 172)" : "#fff",
       light_text: light ? "rgb(8, 92, 172)" : "#fff",
+      banner_btn_text: light ? "#fff" : "rgb(8, 92, 172)",
+      banner_btn_bg: light ? "rgb(8, 92, 172)" : "#fff",
     },
   };
   return (

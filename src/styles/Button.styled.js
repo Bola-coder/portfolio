@@ -5,16 +5,17 @@ export const Button = styled.button`
   font-size: 1.5rem;
   border: none;
   border-radius: 12px;
-  color: rgb(8, 92, 172);
+  color: ${({ theme }) => theme.colors.banner_btn_text};
+  background: ${({ theme }) => theme.colors.banner_btn_bg};
   font-weight: bolder;
   margin-top: 40px;
   width: 250px;
   cursor: pointer;
 
   &:hover {
-    background: transparent;
-    color: #fff;
-    border: 3px solid rgb(8, 92, 172);
+    // color: #fff;
+    // border: 3px solid rgb(8, 92, 172);
+    opacity: 0.9;
     transform: scaleX(0.97);
   }
 

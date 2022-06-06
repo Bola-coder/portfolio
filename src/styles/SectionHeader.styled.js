@@ -12,6 +12,7 @@ export const StyledHeading = styled.h2`
     content: "----";
     color: rgb(8, 92, 172);
     margin-top: 10px;
+    padding: 0px 10px;
   }
 
   @media screen and (max-width: 425px) {

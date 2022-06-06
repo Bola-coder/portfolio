@@ -9,20 +9,17 @@ export const StyledDetails = styled.div`
   margin-top: 10px;
 
   & > div {
-    margin: 20px;
-    width: 300px;
+    margin: 10px;
+    width: 350px;
+    height: 400px;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px 2px #333;
-    // transition: transform 0.3s ease-in;
-
-    // &:hover  & > img{
-    //   transform: scale(1.05);
-    // }
+    border: 3px solid ${({ theme }) => theme.colors.nav_text};
+    // box-shadow: 1px 1px 1px 1px #000;
 
     & > img {
       width: inherit;
       border-radius: 20px;
-      height: 200px;
+      height: 180px;
       display: inline;
       transition: transform 0.3s ease-in;
       cursor: pointer;
@@ -39,7 +36,7 @@ export const StyledDetails = styled.div`
         margin-top: 20px;
         font-size: 30px;
         margin-right: 15px;
-        // color: rgb(8, 92, 172);
+        cursor: pointer;
 
         &:hover {
           opacity: 0.8;
@@ -48,7 +45,7 @@ export const StyledDetails = styled.div`
     }
 
     h3 {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: rgb(8, 92, 172);
       margin-bottom: 8px;
     }
@@ -62,6 +59,4 @@ export const StyledDetails = styled.div`
 export const TagNames = styled.p`
   margin-top: 10px;
   padding: 7px;
-  // color: rgb(8, 92, 172);
-  color: #fff;
 `;
