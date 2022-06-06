@@ -8,19 +8,22 @@ import zuri from "./../images/workImages/zuri2.svg";
 const Work = () => {
   const works = [
     {
-      name: "EdConnect MicroDegree",
-      position: "Frontend Microdegree",
-      image: edconnect,
+      name: "Africa Trainovation Consulting",
+      position: "Frontend Developer",
+      year: "Jan 2022 - Present",
+      image: atc,
     },
     {
       name: "Zuri Technologies",
       position: "Frontend Intern",
+      year: "April 2021 - September",
       image: zuri,
     },
     {
-      name: "Africa Trainovation Consulting",
-      position: "Frontend Developer",
-      image: atc,
+      name: "EdConnect MicroDegree",
+      position: "Frontend Microdegree",
+      year: "Jan 2021 - December 2021",
+      image: edconnect,
     },
   ];
   return (
@@ -34,6 +37,7 @@ const Work = () => {
               <div className="text">
                 <h4>{work.name}</h4>
                 <p>{work.position}</p>
+                <p className="year">{work.year}</p>
               </div>
             </div>
           ))}

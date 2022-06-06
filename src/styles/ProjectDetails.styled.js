@@ -4,10 +4,9 @@ export const StyledDetails = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   background-color: #000;
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   margin-top: 10px;
 
   & > div {
@@ -27,6 +26,7 @@ export const StyledDetails = styled.div`
       height: 200px;
       display: inline;
       transition: transform 0.3s ease-in;
+      cursor: pointer;
 
       &:hover {
         transform: scale(1.02);
