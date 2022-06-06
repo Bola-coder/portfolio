@@ -47,7 +47,7 @@ export const StyledMenu = styled.div`
 `;
 
 export const NavLinks = styled.span`
-  flex-basis: 55%;
+  flex-basis: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,9 +73,10 @@ export const NavLinks = styled.span`
 `;
 
 export const StyledNavLinks = styled.a`
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
   letter-spacing: 2px;
-  padding: 10px 15px;
+  padding: 10px;
   color: ${({ theme }) => theme.colors.nav_text};
   text-decoration: none;
   transition: transform 0.5s;
@@ -84,7 +85,7 @@ export const StyledNavLinks = styled.a`
   // }
 
   &:hover {
-    transform: scaleX(1.15);
-    border-bottom: 3px solid ${({ theme }) => theme.colors.nav_text};
+    transform: scaleX(1.1);
+    border-bottom: 2px solid ${({ theme }) => theme.colors.nav_text};
   }
 `;

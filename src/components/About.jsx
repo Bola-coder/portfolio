@@ -3,11 +3,12 @@ import Resume from "./Resume";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import { AboutContent, StyledAbout } from "../styles/About.styled";
 import myImage from "./../images/bolarinwa.jpg";
+import "aos/dist/aos.css";
 
 const About = () => {
   return (
     <>
-      <StyledAbout>
+      <StyledAbout data-aos="flip-left" id="about">
         <AboutContent>
           <span>
             <img src={myImage} alt="" />

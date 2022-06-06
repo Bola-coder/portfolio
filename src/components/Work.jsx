@@ -4,6 +4,7 @@ import { StyledWorks, StyledWorkDetails } from "../styles/Work.styled";
 import atc from "./../images/workImages/atc2.png";
 import edconnect from "./../images/workImages/edconnect3.png";
 import zuri from "./../images/workImages/zuri2.svg";
+import "aos/dist/aos.css";
 
 const Work = () => {
   const works = [
@@ -28,11 +29,11 @@ const Work = () => {
   ];
   return (
     <React.Fragment>
-      <StyledWorks>
+      <StyledWorks data-aos="slide-left" id="work">
         <StyledHeading>Experience</StyledHeading>
         <StyledWorkDetails>
           {works.map((work, index) => (
-            <div key={index}>
+            <div key={index} data-aos="fade-up" data-aos-delay="1000">
               {/* <img src={work.image} alt="" /> */}
               <div className="text">
                 <h4>{work.name}</h4>

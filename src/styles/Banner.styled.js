@@ -33,10 +33,21 @@ export const StyledBanner = styled.section`
 
   & > span {
     flex-basis: 35%;
+    position: relative;
+    animation: animateImage 3s;
   }
 
   img {
     width: 400px;
+  }
+
+  @keyframes animateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 
   @media screen and (max-width: 1024px) {

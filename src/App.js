@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import NavBar from "./components/Nav";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/Global.styled";
@@ -7,9 +7,15 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Work from "./components/Work";
 import { LightModeContext } from "./components/context/LightModeContext";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./app.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   const { light } = useContext(LightModeContext);
   const theme = {
     colors: {

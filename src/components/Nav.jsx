@@ -21,11 +21,11 @@ const NavBar = () => {
       <StyledMenu>
         <FaHamburger></FaHamburger>
         <NavLinks>
-          <StyledNavLinks href="#">About</StyledNavLinks>
+          <StyledNavLinks href="#about">About</StyledNavLinks>
           <StyledNavLinks href="#">Resume</StyledNavLinks>
-          <StyledNavLinks href="#">Projects</StyledNavLinks>
-          <StyledNavLinks href="#">Work</StyledNavLinks>
-          <StyledNavLinks href="#">Contact</StyledNavLinks>
+          <StyledNavLinks href="#projects">Projects</StyledNavLinks>
+          <StyledNavLinks href="#work">Work</StyledNavLinks>
+          <StyledNavLinks href="#contact">Contact</StyledNavLinks>
           <div onClick={handleLightMode}>
             {light ? <FaMoon /> : <FaLightbulb />}
           </div>

@@ -52,6 +52,7 @@ export const StyledDetails = styled.div`
 
     p {
       font-size: 0.9rem;
+      font-weight: bold;
     }
   }
 `;
@@ -59,4 +60,5 @@ export const StyledDetails = styled.div`
 export const TagNames = styled.p`
   margin-top: 10px;
   padding: 7px;
+  font-weight: bold;
 `;
