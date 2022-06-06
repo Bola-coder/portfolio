@@ -4,8 +4,7 @@ export const StyledDetails = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #000;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.light_text};
   padding: 40px;
   margin-top: 10px;
 

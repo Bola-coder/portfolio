@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-  background-color: ${({ theme }) => theme.colors.nav || "#00008B"};
+  background-color: ${({ theme }) => theme.colors.nav};
   padding: 10px;
   width: 100vw;
   display: flex;
@@ -11,7 +11,6 @@ export const StyledNav = styled.nav`
   position: fixed;
   top: 0;
   // max-width: 100vw;
-  transition: background-color 0.3s ease-in-out;
   z-index: 10;
 
   & > div {
@@ -21,7 +20,7 @@ export const StyledNav = styled.nav`
   p {
     font-size: 1.5rem;
     margin-left: 20px;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.nav_text};
     font-weight: bolder;
   }
 `;
@@ -36,7 +35,7 @@ export const StyledMenu = styled.div`
   @media screen and (max-width: 768px) {
     & > svg {
       display: block;
-      color: #fff;
+      color: ${({ theme }) => theme.colors.nav_text};
     }
   }
 `;
@@ -50,13 +49,27 @@ export const NavLinks = styled.span`
     flex-direction: column;
     display: none;
   }
+
+  div {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid ${({ theme }) => theme.colors.nav_text};
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+
+    & > svg {
+      color: ${({ theme }) => theme.colors.nav_text};
+    }
+  }
 `;
 
 export const StyledNavLinks = styled.a`
   font-size: 1rem;
   letter-spacing: 2px;
   padding: 10px 15px;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.nav_text};
   text-decoration: none;
   transition: transform 0.5s;
 
@@ -65,6 +78,6 @@ export const StyledNavLinks = styled.a`
 
   &:hover {
     transform: scaleX(1.15);
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid ${({ theme }) => theme.colors.nav_text};
   }
 `;

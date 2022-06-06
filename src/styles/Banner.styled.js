@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledBanner = styled.section`
   height: 90vh;
   max-width: 100vw;
-  background-color: #000;
+  // background-color: #000;
   margin-top: 10vh;
   display: flex;
   justify-content: space-between;
@@ -17,13 +17,13 @@ export const StyledBanner = styled.section`
   h1 {
     margin-top: 7%;
     font-size: 4rem;
-    color: ${({ theme }) => theme.colors.nav_text};
+    color: ${({ theme }) => theme.colors.light_text};
   }
 
   p {
     margin-top: 10px;
     font-size: 2rem;
-    color: ${({ theme }) => theme.colors.nav_text};
+    color: ${({ theme }) => theme.colors.light_text};
 
     & > span {
       color: rgb(8, 92, 172);
