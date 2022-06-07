@@ -12,7 +12,7 @@ export const StyledBanner = styled.section`
   & > div {
     padding: 30px;
     margin-left: 40px;
-    max-width: 800px;
+    max-width: 700px;
   }
 
   h1 {
@@ -23,7 +23,7 @@ export const StyledBanner = styled.section`
 
   p {
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: ${({ theme }) => theme.colors.light_text};
 
     & > span {
