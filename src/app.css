@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 100vw;
+max-width: 100vw;
+  overflow-x: hidden;
 }
 
 .app__dark {

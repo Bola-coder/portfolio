@@ -56,7 +56,7 @@ const projects = [
     description:
       "Website for looking up recipes. Search function is also included",
     liveLink: "https://abatoms-recipe-app.netlify.app/",
-    "github Link": "https://github.com/Bola-coder/react-recipe-app",
+    githubLink: "https://github.com/Bola-coder/react-recipe-app",
     author: "Ahmed Bolarinwa",
   },
   {

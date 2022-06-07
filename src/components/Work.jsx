@@ -29,11 +29,11 @@ const Work = () => {
   ];
   return (
     <React.Fragment>
-      <StyledWorks data-aos="slide-left" id="work">
+      <StyledWorks data-aos="fade-down" id="work">
         <StyledHeading>Experience</StyledHeading>
         <StyledWorkDetails>
           {works.map((work, index) => (
-            <div key={index} data-aos="fade-up" data-aos-delay="1000">
+            <div key={index}>
               {/* <img src={work.image} alt="" /> */}
               <div className="text">
                 <h4>{work.name}</h4>

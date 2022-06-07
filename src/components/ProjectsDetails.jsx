@@ -38,8 +38,19 @@ const ProjectDetails = ({ projects }) => {
                     <div className="text">
                       <h3>{project.name}</h3>
                       <p>{project.description}</p>
-                      <FaGithub></FaGithub>
-                      <FaArrowAltCircleRight></FaArrowAltCircleRight>
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noreferrer">
+                        <FaGithub></FaGithub>
+                      </a>
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noreferrer">
+                        <FaArrowAltCircleRight></FaArrowAltCircleRight>
+                      </a>
+
                       <TagNames>Tags: {project.tags.toString()}</TagNames>
                     </div>
                   </div>

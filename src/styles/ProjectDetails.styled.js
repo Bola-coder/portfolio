@@ -32,14 +32,19 @@ export const StyledDetails = styled.div`
     & > div.text {
       padding: 10px;
 
-      & > svg {
-        margin-top: 20px;
+      a {
+        texx-decoration: none;
         font-size: 30px;
         margin-right: 15px;
-        cursor: pointer;
+        color: inherit;
 
-        &:hover {
-          opacity: 0.8;
+        & > svg {
+          margin-top: 20px;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.8;
+          }
         }
       }
     }

@@ -10,6 +10,7 @@ import { LightModeContext } from "./components/context/LightModeContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./app.css";
+import Skills from "./components/Skills";
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
         <NavBar />
         <Banner />
         <About />
+        <Skills />
         <Projects />
         <Work />
       </div>

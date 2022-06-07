@@ -22,7 +22,7 @@ const NavBar = () => {
         <FaHamburger></FaHamburger>
         <NavLinks>
           <StyledNavLinks href="#about">About</StyledNavLinks>
-          <StyledNavLinks href="#">Resume</StyledNavLinks>
+          <StyledNavLinks href="#skills">Skills</StyledNavLinks>
           <StyledNavLinks href="#projects">Projects</StyledNavLinks>
           <StyledNavLinks href="#work">Work</StyledNavLinks>
           <StyledNavLinks href="#contact">Contact</StyledNavLinks>

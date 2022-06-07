@@ -12,6 +12,7 @@ export const StyledBanner = styled.section`
   & > div {
     padding: 30px;
     margin-left: 40px;
+    max-width: 800px;
   }
 
   h1 {

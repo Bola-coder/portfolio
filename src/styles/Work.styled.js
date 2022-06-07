@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledWorks = styled.section`
   padding: 20px;
   margin-top: 40px;
+  max-width: 100vw;
 
   @media screen and (max-width: 768px) {
     padding: 10px;

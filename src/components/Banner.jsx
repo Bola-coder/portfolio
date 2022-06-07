@@ -11,7 +11,8 @@ const Banner = () => {
         <div>
           <h1>Hi, I am Bolarinwa.</h1>
           <p>
-            I am a <span>Frontend </span>Developer.
+            I am a <span>Frontend </span>Developer, and a Fullstack Developer in
+            view
           </p>
           <Button>Contact Me</Button>
         </div>
