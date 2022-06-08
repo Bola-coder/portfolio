@@ -11,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./app.css";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
         <Skills />
         <Projects />
         <Work />
+        <Contact />
       </div>
     </ThemeProvider>
   );

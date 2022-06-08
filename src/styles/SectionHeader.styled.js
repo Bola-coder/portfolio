@@ -4,12 +4,12 @@ export const StyledHeading = styled.h2`
   font-size: 2rem;
   text-align: ${(props) => props.align || "center"};
   color: ${({ theme }) => theme.colors.heading_text};
-  margin-bottom: 15px;
+  // margin-bottom: 15px;
   letter-spacing: 3px;
 
   &::after,
   &::before {
-    content: "----";
+    content: "---";
     color: rgb(8, 92, 172);
     margin-top: 10px;
     padding: 0px 10px;
@@ -22,3 +22,16 @@ export const StyledHeading = styled.h2`
     text-align: center;
   }
 `;
+
+// export const StyledSubHeading = styled.p`
+//   font-size: 1.2rem;
+//   text-align: ${(props) => props.align || "center"};
+//   color: ${({ theme }) => theme.colors.heading_text};
+
+//   &::after,
+//   &::before {
+//     content: "--";
+//     color: rgb(8, 92, 172);
+//     padding: 0px 10px;
+//   }
+// `;
