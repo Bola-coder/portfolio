@@ -10,6 +10,9 @@ export const StyledContact = styled.section`
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledForm = styled.div`
@@ -65,4 +68,23 @@ export const StyledForm = styled.div`
       }
     } // End of Button
   } // End of Form
+`;
+
+export const StyledWidgets = styled.div`
+  padding: 10px;
+  span {
+    padding: 30px;
+    display: block;
+    cursor: pointer;
+    color: ${({ theme }) => theme.colors.light_text};
+
+    svg {
+      display: inline;
+    }
+    p {
+      display: inline;
+      padding: 10px;
+      font-weight: bold;
+    }
+  }
 `;

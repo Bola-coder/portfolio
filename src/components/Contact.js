@@ -4,6 +4,7 @@ import {
   StyledContacts,
   StyledContact,
   StyledForm,
+  StyledWidgets,
 } from "./../styles/Contact.styled";
 import {
   FaGithub,
@@ -12,9 +13,10 @@ import {
   FaCity,
   FaTwitter,
 } from "react-icons/fa";
+import "aos/dist/aos.css";
 const Contact = () => {
   return (
-    <StyledContacts>
+    <StyledContacts data-aos="flip-down">
       <StyledHeading>Contact Me</StyledHeading>
       <StyledContact>
         <StyledForm>
@@ -36,28 +38,28 @@ const Contact = () => {
             </div>
           </form>
         </StyledForm>
-        <div>
+        <StyledWidgets>
           <span>
             <FaCity />
             <p>Ogun State</p>
           </span>
           <span>
-            <span>
-              <FaAddressBook />
-              <p>+2348026117966</p>
-            </span>
+            <FaAddressBook />
+            <p>+2348026117966</p>
+          </span>
+          <span>
             <FaGithub />
             <p>Bola-coder</p>
           </span>
           <span>
             <FaLinkedin />
-            <p>Ahmed Bolarinwar</p>
+            <p>Ahmed Bolarinwa</p>
           </span>
           <span>
             <FaTwitter />
-            <p>https://twitter.com/tesla_sir</p>
+            <p>tesla_sir</p>
           </span>
-        </div>
+        </StyledWidgets>
       </StyledContact>
     </StyledContacts>
   );
