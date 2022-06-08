@@ -14,11 +14,13 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 
 function App() {
+  const { light } = useContext(LightModeContext);
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  const { light } = useContext(LightModeContext);
+  console.log(light);
   const theme = {
     colors: {
       body: " #fff",

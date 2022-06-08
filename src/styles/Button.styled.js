@@ -13,9 +13,9 @@ export const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    // color: #fff;
-    // border: 3px solid rgb(8, 92, 172);
-    opacity: 0.9;
+    background-color: ${({ theme }) => theme.colors.banner_btn_text};
+    color: ${({ theme }) => theme.colors.light_text};
+    border: 4px solid rgb(8, 92, 172);
     transform: scaleX(0.97);
   }
 
