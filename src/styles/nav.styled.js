@@ -21,14 +21,10 @@ export const StyledNav = styled.nav`
       p {
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
         font-family: "Fira Code", monospace;
-        font-family: "IBM Plex Sans", sans-serif;
-        font-family: "Poppins", sans-serif;
-        font-family: "Roboto", sans-serif;
-        font-family: "Yuji Hentaigana Akebono", cursive;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-left: 20px;
         color: ${({ theme }) => theme.colors.nav_text};
-        font-weight: bolder;
+        font-weight: 700;
       }
     }
   }
@@ -50,9 +46,8 @@ export const StyledMenu = styled.div`
 `;
 
 export const NavLinks = styled.span`
-  flex-basis: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 
   @media screen and (max-width: 768px) {
