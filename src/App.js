@@ -1,24 +1,17 @@
-import { useContext, useEffect } from "react";
-import NavBar from "./components/Nav";
+import { useContext } from "react";
 import { ThemeProvider } from "styled-components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/Nav";
 import GlobalStyle from "./styles/Global.styled";
 import Banner from "./components/Banner";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Work from "./components/Work";
 import { LightModeContext } from "./components/context/LightModeContext";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "./app.css";
-import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 
 function App() {
   const { light } = useContext(LightModeContext);
-
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   console.log(light);
   const theme = {
@@ -36,13 +29,16 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className={light ? "app__light" : "app__dark"}>
         <GlobalStyle />
-        <NavBar />
-        <Banner />
-        <About />
-        <Skills />
-        <Projects />
-        <Work />
-        <Contact />
+        <Router>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Banner />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* <Work /> */}
+          </Routes>
+        </Router>
       </div>
     </ThemeProvider>
   );

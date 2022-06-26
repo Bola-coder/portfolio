@@ -6,7 +6,6 @@ export const StyledDetails = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.colors.light_text};
   padding: 40px;
-  margin-top: 10px;
 
   & > div {
     margin: 10px;

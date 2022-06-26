@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StyledContacts = styled.section`
   padding: 20px;
-  margin-top: 140px;
+  margin-top: 10vh;
+  padding-top: 100px;
 `;
 
 export const StyledContact = styled.section`

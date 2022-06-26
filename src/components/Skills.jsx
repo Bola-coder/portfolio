@@ -12,11 +12,10 @@ import {
   FaGit,
   FaGithub,
 } from "react-icons/fa";
-import "aos/dist/aos.css";
 
 const Skills = () => {
   return (
-    <StyledSkills data-aos="flip-down" id="skills">
+    <StyledSkills>
       <StyledHeading>Tools and Skills</StyledHeading>
       <StyledSkill>
         <div>

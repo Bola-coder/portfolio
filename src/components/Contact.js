@@ -13,10 +13,9 @@ import {
   FaCity,
   FaTwitter,
 } from "react-icons/fa";
-import "aos/dist/aos.css";
 const Contact = () => {
   return (
-    <StyledContacts data-aos="flip-down">
+    <StyledContacts >
       <StyledHeading>Contact Me</StyledHeading>
       <StyledContact>
         <StyledForm>

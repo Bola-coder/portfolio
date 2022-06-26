@@ -4,7 +4,6 @@ import { StyledWorks, StyledWorkDetails } from "../styles/Work.styled";
 import atc from "./../images/workImages/atc2.png";
 import edconnect from "./../images/workImages/edconnect3.png";
 import zuri from "./../images/workImages/zuri2.svg";
-import "aos/dist/aos.css";
 
 const Work = () => {
   const works = [
@@ -29,7 +28,7 @@ const Work = () => {
   ];
   return (
     <React.Fragment>
-      <StyledWorks data-aos="fade-down" id="work">
+      <StyledWorks>
         <StyledHeading>Experience</StyledHeading>
         <StyledWorkDetails>
           {works.map((work, index) => (

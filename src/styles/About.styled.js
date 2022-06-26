@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.section`
   padding: 10px;
-  margin-top: 10%;
+  margin-top: 10vh;
 
   @media screen and (max-width: 1024px) {
     padding: 5px;
@@ -13,6 +13,7 @@ export const AboutContent = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  margin-top: 10%;
 
   & > div {
     flex-basis: 55%;

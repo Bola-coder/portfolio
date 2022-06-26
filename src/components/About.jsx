@@ -3,12 +3,13 @@ import Resume from "./Resume";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import { AboutContent, StyledAbout } from "../styles/About.styled";
 import myImage from "./../images/bolarinwa.jpg";
-import "aos/dist/aos.css";
+import Skills from "./Skills";
+import Work from "./Work";
 
 const About = () => {
   return (
     <>
-      <StyledAbout data-aos="flip-left" id="about">
+      <StyledAbout id="about">
         <AboutContent>
           <span>
             <img src={myImage} alt="" />
@@ -30,6 +31,10 @@ const About = () => {
             <Resume />
           </div>
         </AboutContent>
+
+        {/* Other Components */}
+        <Skills />
+        <Work />
       </StyledAbout>
     </>
   );
