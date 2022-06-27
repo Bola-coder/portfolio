@@ -16,8 +16,8 @@ export const StyledBanner = styled.section`
   }
 
   h1 {
-    margin-top: 7%;
-    font-size: 4rem;
+    // margin-top: 3%;
+    font-size: 4.5rem;
     color: ${({ theme }) => theme.colors.light_text};
   }
 
@@ -35,7 +35,7 @@ export const StyledBanner = styled.section`
   & > span {
     flex-basis: 35%;
     position: relative;
-    animation: animateImage 3s;
+    animation: animateImage 4s infinite;
   }
 
   img {
@@ -43,11 +43,15 @@ export const StyledBanner = styled.section`
   }
 
   @keyframes animateImage {
-    from {
+    0% {
       transform: rotate(0deg);
     }
-    to {
-      transform: rotate(360deg);
+    50% {
+      transform: rotate(90deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
     }
   }
 

@@ -100,7 +100,8 @@ export const StyledNavLinks = styled.p`
   }
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(2);
+    letter-spacing: 4px;
     // border-bottom: 2px solid ${({ theme }) => theme.colors.nav_text};
   }
 `;
