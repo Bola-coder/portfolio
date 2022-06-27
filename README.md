@@ -1,5 +1,8 @@
 # Abatoms Portfolio
+ A repository that host the portfolio that showcases my work as a frontend developer.
 
-## A repository that host the portfolio that showcases my work as a frontend develeoper
+#### Currently a work in progress.
 
-#### Hopefully, it will be a loveable portfolio
+Live Link: https://abatoms.netlify.app
+
+
