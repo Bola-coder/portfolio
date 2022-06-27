@@ -103,14 +103,23 @@ export const StyledNavLinks = styled.p`
   font-weight: bold;
   letter-spacing: 2px;
   padding: 15px;
-  width: 100vh;
+  width: 100vw;
   margin: 0 auto;
   text-align: center;
   color: ${({ theme }) => theme.colors.light_text};
   transition: transform 0.5s;
 
-  // @media screen and (max-width: 768px) {
-  // }
+  @media screen and (max-width: 768px) {
+    &:first-child {
+      margin-top: 12%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    &:first-child {
+      margin-top: 20%;
+    }
+  }
 
   a {
     text-decoration: none;

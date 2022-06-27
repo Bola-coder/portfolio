@@ -103,13 +103,25 @@ export const StyledBanner = styled.section`
 
     & > span {
       margin-top: 40px;
-      margin-left: 30px;
-      animation: none;
+      margin-left: 20px;
+      animation: animateImageSecond 2s infinite;
 
       img {
         width: 450px;
       }
     } // End of Span
+    @keyframes animateImageSecond {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, 50px);
+      }
+
+      100% {
+        transform: translate(0, 0);
+      }
+    }
   } // End of Media Query
 
   @media screen and (max-width: 425px) {
