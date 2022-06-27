@@ -14,6 +14,8 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 const Contact = () => {
+  document.title = "Ahmed Bolarinwa | Contact";
+
   return (
     <StyledContacts>
       <StyledHeading>Contact Me</StyledHeading>

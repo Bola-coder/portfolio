@@ -6,6 +6,7 @@ import { StyledBanner } from "../styles/Banner.styled";
 import bannerImg from "./../images/codeImage.png";
 
 const Banner = () => {
+  document.title = "Ahmed Bolarinwa";
   return (
     <>
       <StyledBanner>

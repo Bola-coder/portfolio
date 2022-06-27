@@ -8,6 +8,7 @@ export const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 10vh;
+  max-height: 10vh;
   position: fixed;
   top: 0;
   // max-width: 100vw;

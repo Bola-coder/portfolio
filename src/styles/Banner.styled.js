@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledBanner = styled.section`
   height: 90vh;
+  max-height: 90vh;
   max-width: 100vw;
-  // background-color: #000;
   margin-top: 10vh;
   display: flex;
   justify-content: space-between;

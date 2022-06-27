@@ -7,6 +7,8 @@ import Skills from "./Skills";
 import Work from "./Work";
 
 const About = () => {
+  document.title = "Ahmed Bolarinwa | About";
+
   return (
     <>
       <StyledAbout id="about">
