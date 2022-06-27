@@ -17,16 +17,18 @@ export const StyledBanner = styled.section`
     h1 {
       // margin-top: 3%;
       font-size: 4.5rem;
+      font-weight: 900;
       color: ${({ theme }) => theme.colors.light_text};
     }
 
     p {
       margin-top: 10px;
       font-size: 2rem;
+      font-weight: 700;
       color: ${({ theme }) => theme.colors.light_text};
 
       & > span {
-        color: rgb(8, 92, 172);
+        color: ${({ theme }) => theme.colors.heading_text};
         font-weight: 700;
       }
     }
@@ -56,6 +58,7 @@ export const StyledBanner = styled.section`
 
     img {
       width: 400px;
+      color: ${({ theme }) => theme.colors.heading_text};
     }
   }
   // End od Span

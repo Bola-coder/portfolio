@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <>
-      <StyledAbout id="about">
+      <StyledAbout>
         <AboutContent>
           <span>
             <img src={myImage} alt="" />

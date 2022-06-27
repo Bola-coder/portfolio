@@ -18,13 +18,17 @@ function App() {
     colors: {
       body: " #fff",
       nav: light ? "#fff" : "#000",
-      heading_text: "rgb(8, 92, 172)",
-      // nav_text: light ? "rgb(8, 92, 172)" : "#fff",
-      light_text: light ? "rgb(8, 92, 172)" : "#fff",
-      banner_btn_text: light ? "#fff" : "rgb(8, 92, 172)",
-      banner_btn_bg: light ? "rgb(8, 92, 172)" : "#fff",
+      heading_text: "#0317fc",
+      light_text: light ? "#0317fc" : "#fff",
+      banner_btn_text: light ? "#fff" : "#0317fc",
+      banner_btn_bg: light ? "#0317fc" : "#fff",
     },
   };
+
+  // heading_text: "rgb(8, 92, 172)",
+  // light_text: light ? "rgb(8, 92, 172)" : "#fff",
+  // banner_btn_text: light ? "#fff" : "rgb(8, 92, 172)",
+  // banner_btn_bg: light ? "rgb(8, 92, 172)" : "#fff",
   return (
     <ThemeProvider theme={theme}>
       <div className={light ? "app__light" : "app__dark"}>
