@@ -5,7 +5,7 @@ import {
   StyledContact,
   StyledForm,
   StyledWidgets,
-} from "./../styles/Contact.styled";
+} from "../styles/Contact.styled";
 import {
   FaGithub,
   FaLinkedin,
@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 const Contact = () => {
   return (
-    <StyledContacts >
+    <StyledContacts>
       <StyledHeading>Contact Me</StyledHeading>
       <StyledContact>
         <StyledForm>
@@ -40,7 +40,7 @@ const Contact = () => {
         <StyledWidgets>
           <span>
             <FaCity />
-            <p>Ogun State</p>
+            <p>Abeokuta, Ogun State</p>
           </span>
           <span>
             <FaAddressBook />

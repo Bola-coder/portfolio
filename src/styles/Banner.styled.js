@@ -58,7 +58,7 @@ export const StyledBanner = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    height: 50vh;
+    height: 90vh;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;

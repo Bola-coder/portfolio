@@ -14,7 +14,7 @@ export const StyledNav = styled.nav`
   z-index: 2;
 
   & > div {
-    flex: 1;
+    // flex: 1;
     a {
       text-decoration: none;
 
@@ -32,9 +32,10 @@ export const StyledNav = styled.nav`
 
 export const StyledMenu = styled.div`
   & > svg {
-    display: none;
     font-size: 40px;
-    margin-right: 0;
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
   }
 
   @media screen and (max-width: 768px) {
@@ -46,19 +47,24 @@ export const StyledMenu = styled.div`
 `;
 
 export const NavLinks = styled.span`
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  position: absolute;
+  top: 10vh;
+  left: 0%;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  padding-top: 5%;
+  background-color: ${({ theme }) => theme.colors.nav};
 
   @media screen and (max-width: 768px) {
-    flex-direction: column;
-    display: none;
   }
 
   div {
     width: 30px;
     height: 30px;
     padding: 5px;
+    margin: 0 auto;
+    margin-top: 50px;
     border: 1px solid ${({ theme }) => theme.colors.nav_text};
     border-radius: 50%;
     text-align: center;
@@ -66,15 +72,22 @@ export const NavLinks = styled.span`
 
     & > svg {
       color: ${({ theme }) => theme.colors.nav_text};
+
+      &:hover {
+        transform: rotate(90deg);
+      }
     }
   }
 `;
 
 export const StyledNavLinks = styled.p`
-  font-size: 0.9rem;
+  font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
-  padding: 10px;
+  padding: 15px;
+  width: 100vh;
+  margin: 0 auto;
+  text-align: center;
   color: ${({ theme }) => theme.colors.nav_text};
   transition: transform 0.5s;
 
@@ -87,7 +100,7 @@ export const StyledNavLinks = styled.p`
   }
 
   &:hover {
-    transform: scaleX(1.1);
-    border-bottom: 2px solid ${({ theme }) => theme.colors.nav_text};
+    transform: scale(1.5);
+    // border-bottom: 2px solid ${({ theme }) => theme.colors.nav_text};
   }
 `;

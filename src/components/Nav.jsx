@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import { FaHamburger, FaLightbulb, FaMoon } from "react-icons/fa";
+import { FaHamburger, FaTimes, FaLightbulb, FaMoon } from "react-icons/fa";
 import { LightModeContext } from "./context/LightModeContext";
 import {
   StyledNav,
@@ -10,8 +10,12 @@ import {
 } from "../styles/nav.styled";
 
 const NavBar = () => {
-  // const [mobile, showMobile] = useState(false);
+  const [mobile, setMobile] = useState(false);
   const { light, handleLightMode } = useContext(LightModeContext);
+
+  const handleMobile = () => {
+    setMobile((prev) => !prev);
+  };
   return (
     <StyledNav>
       <div>
@@ -20,22 +24,29 @@ const NavBar = () => {
         </Link>
       </div>
       {/* Mobile Hamburger */}
-      <StyledMenu>
-        <FaHamburger></FaHamburger>
-        <NavLinks>
-          <StyledNavLinks>
-            <Link to="/about">About</Link>
-          </StyledNavLinks>
-          <StyledNavLinks>
-            <Link to="/portfolio">Portfolio</Link>
-          </StyledNavLinks>
-          <StyledNavLinks>
-            <Link to="/contact">Contact</Link>
-          </StyledNavLinks>
-          <div onClick={handleLightMode}>
-            {light ? <FaMoon /> : <FaLightbulb />}
-          </div>
-        </NavLinks>
+      <StyledMenu onClick={handleMobile}>
+        {mobile ? <FaTimes /> : <FaHamburger />}
+        {mobile ? (
+          <NavLinks className={mobile ? "mobile" : ""}>
+            <StyledNavLinks>
+              <Link to="/">Home</Link>
+            </StyledNavLinks>
+            <StyledNavLinks>
+              <Link to="/about">About</Link>
+            </StyledNavLinks>
+            <StyledNavLinks>
+              <Link to="/portfolio">Portfolio</Link>
+            </StyledNavLinks>
+            <StyledNavLinks>
+              <Link to="/contact">Contact</Link>
+            </StyledNavLinks>
+            <div onClick={handleLightMode}>
+              {light ? <FaMoon /> : <FaLightbulb />}
+            </div>
+          </NavLinks>
+        ) : (
+          ""
+        )}
       </StyledMenu>
     </StyledNav>
   );
