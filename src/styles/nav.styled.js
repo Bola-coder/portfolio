@@ -14,7 +14,6 @@ export const StyledNav = styled.nav`
   z-index: 2;
 
   & > div {
-    // flex: 1;
     a {
       text-decoration: none;
 
