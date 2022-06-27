@@ -23,12 +23,28 @@ export const StyledBanner = styled.section`
 
   p {
     margin-top: 10px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: ${({ theme }) => theme.colors.light_text};
 
     & > span {
       color: rgb(8, 92, 172);
       font-weight: 700;
+    }
+  }
+
+  a {
+    color: ${({ theme }) => theme.colors.light_text};
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+
+    svg {
+      font-size: 30px;
+    }
+
+    &:hover {
+      transform: scale(1.3);
+      border: 10px soild ${({ theme }) => theme.colors.light_text};
     }
   }
 

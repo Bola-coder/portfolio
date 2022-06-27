@@ -23,7 +23,7 @@ export const StyledNav = styled.nav`
         font-family: "Fira Code", monospace;
         font-size: 1.8rem;
         margin-left: 20px;
-        color: ${({ theme }) => theme.colors.nav_text};
+        color: ${({ theme }) => theme.colors.light_text};
         font-weight: 700;
       }
     }
@@ -36,12 +36,11 @@ export const StyledMenu = styled.div`
     margin-right: 50px;
     cursor: pointer;
     position: relative;
+    color: ${({ theme }) => theme.colors.light_text};
   }
 
   @media screen and (max-width: 768px) {
     & > svg {
-      display: block;
-      color: ${({ theme }) => theme.colors.nav_text};
     }
   }
 `;
@@ -65,13 +64,13 @@ export const NavLinks = styled.span`
     padding: 5px;
     margin: 0 auto;
     margin-top: 50px;
-    border: 1px solid ${({ theme }) => theme.colors.nav_text};
+    border: 1px solid ${({ theme }) => theme.colors.light_text};
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
 
     & > svg {
-      color: ${({ theme }) => theme.colors.nav_text};
+      color: ${({ theme }) => theme.colors.light_text};
 
       &:hover {
         transform: rotate(90deg);
@@ -88,7 +87,7 @@ export const StyledNavLinks = styled.p`
   width: 100vh;
   margin: 0 auto;
   text-align: center;
-  color: ${({ theme }) => theme.colors.nav_text};
+  color: ${({ theme }) => theme.colors.light_text};
   transition: transform 0.5s;
 
   // @media screen and (max-width: 768px) {
@@ -102,6 +101,6 @@ export const StyledNavLinks = styled.p`
   &:hover {
     transform: scale(2);
     letter-spacing: 4px;
-    // border-bottom: 2px solid ${({ theme }) => theme.colors.nav_text};
+    // border-bottom: 2px solid ${({ theme }) => theme.colors.light_text};
   }
 `;
