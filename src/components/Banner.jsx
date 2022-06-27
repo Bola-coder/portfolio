@@ -15,7 +15,7 @@ const Banner = () => {
             I am a{" "}
             <span>
               <ReactTypingEffect
-                text={["Fullstack Developer", "CS Student", "Tech Ethusiast"]}
+                text={["Frontend Developer", "CS Student", "Tech Ethusiast"]}
                 typingDelay={1000}
                 eraseDelay={500}
                 eraseSpeed={200}

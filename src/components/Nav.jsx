@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import { FaHamburger, FaTimes, FaLightbulb, FaMoon } from "react-icons/fa";
+import { FaBars, FaTimes, FaLightbulb, FaMoon } from "react-icons/fa";
 import { LightModeContext } from "./context/LightModeContext";
 import {
   StyledNav,
@@ -25,7 +25,7 @@ const NavBar = () => {
       </div>
       {/* Mobile Hamburger */}
       <StyledMenu onClick={handleMobile}>
-        {mobile ? <FaTimes /> : <FaHamburger />}
+        {mobile ? <FaTimes /> : <FaBars />}
         {mobile ? (
           <NavLinks className={mobile ? "mobile" : ""}>
             <StyledNavLinks>

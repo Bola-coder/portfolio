@@ -13,50 +13,52 @@ export const StyledBanner = styled.section`
     padding: 30px;
     margin-left: 40px;
     max-width: 700px;
-  }
 
-  h1 {
-    // margin-top: 3%;
-    font-size: 4.5rem;
-    color: ${({ theme }) => theme.colors.light_text};
-  }
-
-  p {
-    margin-top: 10px;
-    font-size: 2rem;
-    color: ${({ theme }) => theme.colors.light_text};
-
-    & > span {
-      color: rgb(8, 92, 172);
-      font-weight: 700;
-    }
-  }
-
-  a {
-    color: ${({ theme }) => theme.colors.light_text};
-    padding: 20px;
-    margin-top: 20px;
-    display: inline-block;
-
-    svg {
-      font-size: 30px;
+    h1 {
+      // margin-top: 3%;
+      font-size: 4.5rem;
+      color: ${({ theme }) => theme.colors.light_text};
     }
 
-    &:hover {
-      transform: scale(1.3);
-      border: 10px soild ${({ theme }) => theme.colors.light_text};
+    p {
+      margin-top: 10px;
+      font-size: 2rem;
+      color: ${({ theme }) => theme.colors.light_text};
+
+      & > span {
+        color: rgb(8, 92, 172);
+        font-weight: 700;
+      }
     }
-  }
+
+    // Icon Links
+    a {
+      color: ${({ theme }) => theme.colors.light_text};
+      padding: 20px;
+      margin-top: 20px;
+      display: inline-block;
+
+      svg {
+        font-size: 30px;
+      }
+
+      &:hover {
+        transform: scale(1.3);
+        border: 10px soild ${({ theme }) => theme.colors.light_text};
+      }
+    }
+  } // End of div
 
   & > span {
     flex-basis: 35%;
     position: relative;
     animation: animateImage 4s infinite;
-  }
 
-  img {
-    width: 400px;
+    img {
+      width: 400px;
+    }
   }
+  // End od Span
 
   @keyframes animateImage {
     0% {
@@ -71,6 +73,8 @@ export const StyledBanner = styled.section`
     }
   }
 
+  // Media Queries
+
   @media screen and (max-width: 1024px) {
     & > span {
       flex-basis: 50%;
@@ -81,26 +85,29 @@ export const StyledBanner = styled.section`
     height: 90vh;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     & > div {
-      padding: 10px;
-    }
+      padding: 20px;
+      margin-left: 10px;
 
-    h1 {
-      margin-top: 3%;
-      font-size: 4.2rem;
-    }
+      h1 {
+        margin-top: 3%;
+        font-size: 4.2rem;
+      }
+    } // End of div
 
     & > span {
       flex-basis: 50%;
       margin-top: 80px;
       margin-left: 30px;
-      display: none;
-    }
-    img {
-      width: 500px;
-    }
+      // display: none;
+      animation: none;
+
+      img {
+        width: 400px;
+      }
+    } // End of Span
   }
 
   @media screen and (max-width: 425px) {
@@ -112,15 +119,29 @@ export const StyledBanner = styled.section`
       font-size: 1.3rem;
     }
 
-    img {
-      width: 350px;
-    }
-  }
+    a {
+      padding: 10px;
+      margin-top: 20px;
+      display: inline-block;
 
-  @media screen and (max-width: 375px) {
+      svg {
+        font-size: 20px;
+      }
+    }
+
     & > span {
       flex-basis: 50%;
-    }
+      margin-top: 80px;
+      margin-left: 10px;
+      animation: none;
+
+      img {
+        width: 300px;
+      }
+    } // End od Span
+  } // End od Media Query
+
+  @media screen and (max-width: 375px) {
     h1 {
       margin-top: 3%;
       font-size: 2.7rem;
@@ -129,8 +150,12 @@ export const StyledBanner = styled.section`
       font-size: 1.1rem;
     }
 
-    img {
-      width: 300px;
-    }
-  }
+    & > span {
+      flex-basis: 50%;
+
+      img {
+        width: 250px;
+      }
+    } // End od Span
+  } // End od Media Query
 `;

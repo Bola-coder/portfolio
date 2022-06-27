@@ -16,7 +16,6 @@ export const StyledNav = styled.nav`
   & > div {
     a {
       text-decoration: none;
-
       p {
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
         font-family: "Fira Code", monospace;
@@ -24,9 +23,17 @@ export const StyledNav = styled.nav`
         margin-left: 20px;
         color: ${({ theme }) => theme.colors.light_text};
         font-weight: 700;
+
+        &:hover {
+          transform: rotate(7deg);
+        }
+
+        @media screen and (max-width: 768px) {
+          margin-left: 10px;
+        }
       }
     }
-  }
+  } // End of Div.
 `;
 
 export const StyledMenu = styled.div`
@@ -36,11 +43,22 @@ export const StyledMenu = styled.div`
     cursor: pointer;
     position: relative;
     color: ${({ theme }) => theme.colors.light_text};
+    transition: transform 0.5s ease-in-out;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
   }
 
   @media screen and (max-width: 768px) {
     & > svg {
+      margin-right: 20px;
     }
+
+    @media screen and (max-width: 425px) {
+      & > svg {
+        margin-right: 10px;
+      }
   }
 `;
 
@@ -58,11 +76,11 @@ export const NavLinks = styled.span`
   }
 
   div {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     border: 1px solid ${({ theme }) => theme.colors.light_text};
     border-radius: 50%;
     text-align: center;
@@ -70,6 +88,8 @@ export const NavLinks = styled.span`
 
     & > svg {
       color: ${({ theme }) => theme.colors.light_text};
+      font-size: 40px;
+      text-align: center;
 
       &:hover {
         transform: rotate(90deg);
