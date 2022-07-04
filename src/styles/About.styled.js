@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledAbout = styled.section`
   padding: 10px;
-  margin-top: 10vh;
+  // margin-top: 50vh;
 
   @media screen and (max-width: 1024px) {
     padding: 5px;

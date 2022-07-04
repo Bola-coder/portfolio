@@ -11,7 +11,6 @@ export const StyledNav = styled.nav`
   max-height: 10vh;
   position: fixed;
   top: 0;
-  // max-width: 100vw;
   z-index: 2;
 
   & > div {
@@ -103,8 +102,9 @@ export const StyledNavLinks = styled.p`
   font-size: 1.8rem;
   font-weight: bold;
   letter-spacing: 2px;
-  padding: 15px;
+  padding: 30px 5px;
   width: 100vw;
+  display: inline-block;
   margin: 0 auto;
   text-align: center;
   color: ${({ theme }) => theme.colors.light_text};
@@ -128,7 +128,7 @@ export const StyledNavLinks = styled.p`
   }
 
   &:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     letter-spacing: 4px;
     // border-bottom: 2px solid ${({ theme }) => theme.colors.light_text};
   }

@@ -5,6 +5,7 @@ import { AboutContent, StyledAbout } from "../styles/About.styled";
 import myImage from "./../images/bolarinwa.jpg";
 import Skills from "./Skills";
 import Work from "./Work";
+import Services from "./Services";
 
 const About = () => {
   document.title = "Ahmed Bolarinwa | About";
@@ -35,6 +36,7 @@ const About = () => {
         </AboutContent>
 
         {/* Other Components */}
+        <Services />
         <Skills />
         <Work />
       </StyledAbout>
