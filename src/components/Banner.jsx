@@ -24,7 +24,6 @@ const Banner = () => {
               />
             </span>
           </p>
-          {/* <Button>Contact Me</Button> */}
           <a
             href="https://github.com/Bola-coder"
             target="_blank"

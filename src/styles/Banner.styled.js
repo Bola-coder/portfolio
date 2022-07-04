@@ -87,7 +87,7 @@ export const StyledBanner = styled.section`
   @media screen and (max-width: 768px) {
     height: 90vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     & > div {
@@ -95,12 +95,16 @@ export const StyledBanner = styled.section`
       margin-left: 10px;
 
       h1 {
-        margin-top: 3%;
-        font-size: 3.2rem;
+        margin-top: 10%;
+        font-size: 4.2rem;
       }
 
       p {
         font-size: 1.7rem;
+
+        span {
+          font-size: 2rem;
+        }
       }
     } // End of div
 
@@ -108,6 +112,7 @@ export const StyledBanner = styled.section`
       margin-top: 40px;
       margin-left: 20px;
       animation: animateImageSecond 2s infinite;
+      display: none;
 
       img {
         width: 450px;
@@ -130,20 +135,24 @@ export const StyledBanner = styled.section`
   @media screen and (max-width: 425px) {
     & > div {
       h1 {
-        margin-top: 5%;
-        font-size: 3rem;
+        margin-top: 15%;
+        font-size: 4rem;
       }
       p {
         font-size: 1.5rem;
+
+        span {
+          font-size: 1.7rem;
+        }
       }
 
       a {
         padding: 10px;
-        margin-top: 20px;
+        margin-top: 60px;
         display: inline-block;
 
         svg {
-          font-size: 30px;
+          font-size: 40px;
         }
       }
     } // End of Div
@@ -160,11 +169,15 @@ export const StyledBanner = styled.section`
   @media screen and (max-width: 375px) {
     & > div {
       h1 {
-        margin-top: 7%;
-        font-size: 2.7rem;
+        margin-top: 20%;
+        font-size: 3.5rem;
       }
       p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
 
