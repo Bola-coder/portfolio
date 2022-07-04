@@ -17,11 +17,12 @@ function App() {
   const theme = {
     colors: {
       body: " #fff",
-      nav: light ? "#fff" : "#000",
+      nav: light ? "#fff" : "rgb(13, 11, 11);",
       heading_text: "#0317fc",
       light_text: light ? "#0317fc" : "#fff",
       banner_btn_text: light ? "#fff" : "#0317fc",
       banner_btn_bg: light ? "#0317fc" : "#fff",
+      text_dark: light ? "#fff" : "rgb(13, 11, 11)",
     },
   };
 

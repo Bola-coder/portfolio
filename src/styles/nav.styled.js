@@ -68,7 +68,7 @@ export const NavLinks = styled.span`
   left: 0%;
   width: 100vw;
   max-width: 100vw;
-  height: 100vh;
+  height: 90vh;
   padding-top: 5%;
   background-color: ${({ theme }) => theme.colors.nav};
 
@@ -99,10 +99,10 @@ export const NavLinks = styled.span`
 `;
 
 export const StyledNavLinks = styled.p`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-  padding: 30px 5px;
+  padding: 25px 5px;
   width: 100vw;
   display: inline-block;
   margin: 0 auto;
@@ -117,9 +117,9 @@ export const StyledNavLinks = styled.p`
   }
 
   @media screen and (max-width: 425px) {
-    &:first-child {
-      margin-top: 20%;
-    }
+    // &:first-child {
+    //   margin-top: 20%;
+    // }
   }
 
   a {
@@ -129,7 +129,7 @@ export const StyledNavLinks = styled.p`
 
   &:hover {
     transform: scale(1.5);
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     // border-bottom: 2px solid ${({ theme }) => theme.colors.light_text};
   }
 `;

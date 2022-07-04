@@ -32,7 +32,7 @@ export const StyledSkill = styled.div`
 
     p {
       font-size: 1rem;
-      color: rgb(8, 92, 172);
+      color: ${({ theme }) => theme.colors.light_text};
       font-weight: bold;
     }
   }

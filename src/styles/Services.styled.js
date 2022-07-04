@@ -7,36 +7,64 @@ export const StyledServices = styled.section`
 
 export const StyledServiceCards = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 10px;
 
   & > div {
-    padding: 10px;
+    padding: 20px;
     background-color: ${({ theme }) => theme.colors.light_text};
-    width: 400px;
+    width: 550px;
     height: 300px;
     border-radius: 10px;
+    margin-top: 20px;
+
+    @media screen and (max-width: 1300px) {
+      width: 450px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 425px) {
+      height: 350px;
+    }
+
+    @media screen and (max-width: 375px) {
+      height: 420px;
+    }
+
+    svg {
+      text-align: center;
+      margin: 0 auto;
+      width: inherit;
+      font-size: 3rem;
+      color: ${({ theme }) => theme.colors.text_dark};
+    }
 
     h4 {
-      font-size: 1.2rem;
-      color: ${({ theme }) => theme.colors.banner_btn_text};
+      font-size: 1.3rem;
+      color: ${({ theme }) => theme.colors.text_dark};
       padding: 10px;
       letter-spacing: 2px;
       margin-bottom: 4%;
+      font-weight: 700;
+      text-align: center;
 
-      &::before,
-      &::after {
-        content: "__";
-      }
+      //   &::before,
+      //   &::after {
+      //     content: "__";
+      //   }
     }
 
     p {
       font-size: 1.2rem;
       letter-spacing: 2px;
       margin-top: 5%;
-      color: ${({ theme }) => theme.colors.banner_btn_text};
+      font-weight: 600;
+      color: ${({ theme }) => theme.colors.text_dark};
     }
   }
 `;

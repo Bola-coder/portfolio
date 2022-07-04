@@ -27,7 +27,7 @@ const NavBar = () => {
       <StyledMenu onClick={handleMobile}>
         {mobile ? <FaTimes /> : <FaBars />}
         {mobile ? (
-          <NavLinks className={mobile ? "mobile" : ""}>
+          <NavLinks>
             <StyledNavLinks>
               <Link to="/">Home</Link>
             </StyledNavLinks>

@@ -32,7 +32,7 @@ export const StyledWorkDetails = styled.div`
       font-size: 1rem;
     }
     .year {
-      color: rgb(8, 92, 172);
+      color: ${({ theme }) => theme.colors.heading_text};
       font-weight: 600;
     }
   }

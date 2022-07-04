@@ -148,7 +148,7 @@ export const StyledBanner = styled.section`
 
       a {
         padding: 10px;
-        margin-top: 60px;
+        margin-top: 30px;
         display: inline-block;
 
         svg {

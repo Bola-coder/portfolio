@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const StyledHeading = styled.h2`
   font-size: 2rem;
   text-align: ${(props) => props.align || "center"};
-  color: ${({ theme }) => theme.colors.heading_text};
+  color: ${({ theme }) => theme.colors.light_text};
   margin-bottom: 15px;
   letter-spacing: 3px;
 
   &::after,
   &::before {
-    content: "|";
-    color: rgb(8, 92, 172);
+    content: "||";
+    color: ${({ theme }) => theme.colors.light_text};
     margin-top: 10px;
     padding: 0px 10px;
   }

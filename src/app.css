@@ -9,7 +9,7 @@ body {
 }
 
 .app__dark {
-  background-color: #000;
+  background-color: rgb(13, 11, 11);
   color: #fff;
 }
 
