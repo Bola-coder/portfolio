@@ -26,7 +26,7 @@ export const StyledSkill = styled.div`
         font-size: 60px;
       }
       @media screen and (max-width: 425px) {
-        font-size: 30px;
+        font-size: 25px;
       }
     }
 
@@ -34,6 +34,9 @@ export const StyledSkill = styled.div`
       font-size: 1rem;
       color: ${({ theme }) => theme.colors.light_text};
       font-weight: bold;
+      @media screen and (max-width: 425px) {
+        font-size: 0.8rem;
+      }
     }
   }
 `;

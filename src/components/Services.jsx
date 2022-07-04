@@ -19,13 +19,13 @@ const Services = () => {
     {
       name: "API DEVELOPMENT",
       content:
-        "I build robust and scalable APIs that communictae with frontend and contribute to bulding world class fullstack applications",
+        "I build robust and scalable APIs that communictae with frontend and contribute to building world class fullstack applications",
       icon: <FaCode />,
     },
     {
       name: "TECH TUTORIALS",
       content:
-        "I teach frontend web development to people who are willing to learn and dive into th tech space. My students are doing well in tech",
+        "I teach frontend web development to people who are willing to learn and dive into the tech space. My students are doing well in tech",
       icon: <FaSearchengin />,
     },
   ];

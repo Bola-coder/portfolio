@@ -16,7 +16,7 @@ import {
 const Skills = () => {
   return (
     <StyledSkills>
-      <StyledHeading>Tools and Skills</StyledHeading>
+      <StyledHeading>Tools I Use</StyledHeading>
       <StyledSkill>
         <div>
           <FaHtml5 />

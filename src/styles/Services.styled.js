@@ -19,6 +19,7 @@ export const StyledServiceCards = styled.div`
     height: 300px;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
 
     @media screen and (max-width: 1300px) {
       width: 450px;
@@ -29,10 +30,12 @@ export const StyledServiceCards = styled.div`
     }
 
     @media screen and (max-width: 425px) {
+      width: 300px;
       height: 350px;
     }
 
     @media screen and (max-width: 375px) {
+      width: 280px;
       height: 420px;
     }
 

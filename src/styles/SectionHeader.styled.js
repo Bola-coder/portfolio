@@ -23,6 +23,7 @@ export const StyledHeading = styled.h2`
   }
 `;
 
+
 // export const StyledSubHeading = styled.p`
 //   font-size: 1.2rem;
 //   text-align: ${(props) => props.align || "center"};

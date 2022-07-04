@@ -23,6 +23,7 @@ function App() {
       banner_btn_text: light ? "#fff" : "#0317fc",
       banner_btn_bg: light ? "#0317fc" : "#fff",
       text_dark: light ? "#fff" : "rgb(13, 11, 11)",
+      text_light: light ? "rgb(13, 11, 11)" : "#fff",
     },
   };
 

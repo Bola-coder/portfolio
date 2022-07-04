@@ -15,6 +15,7 @@ export const StyledNav = styled.nav`
 
   & > div {
     a {
+      display: block;
       text-decoration: none;
       p {
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
@@ -24,10 +25,11 @@ export const StyledNav = styled.nav`
         color: ${({ theme }) => theme.colors.light_text};
         font-weight: 700;
 
-        &:hover {
-          transform: rotate(7deg);
+        @media (hover: hover) {
+          &:hover {
+            transform: rotate(7deg);
+          }
         }
-
         @media screen and (max-width: 768px) {
           margin-left: 10px;
         }
