@@ -35,7 +35,7 @@ const Services = () => {
       <StyledServiceCards>
         {services.map((service, index) => (
           <div key={index}>
-            {service.icon}
+            <div>{service.icon}</div>
             <h4>{service.name}</h4>
             <p>{service.content}</p>
           </div>

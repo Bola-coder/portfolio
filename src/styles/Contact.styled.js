@@ -93,7 +93,7 @@ export const StyledForm = styled.div`
       textarea {
         width: 250px;
       }
-    } // End of 425px media query
+    } // End of 320px media query
   } // End of Form
 `;
 

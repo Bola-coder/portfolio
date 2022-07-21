@@ -39,12 +39,17 @@ export const StyledServiceCards = styled.div`
       height: 420px;
     }
 
-    svg {
-      text-align: center;
-      margin: 0 auto;
-      width: inherit;
-      font-size: 3rem;
-      color: ${({ theme }) => theme.colors.text_dark};
+    div {
+      display: flex;
+      svg {
+        padding: 0;
+        text-align: center;
+        margin: 0 auto;
+        width: inherit;
+        font-size: 3rem;
+        color: ${({ theme }) => theme.colors.text_dark};
+      }
+      margin-bottom: 10px;
     }
 
     h4 {
