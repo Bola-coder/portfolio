@@ -12,10 +12,8 @@ const Projects = () => {
   return (
     <>
       <StyledProjects>
-        <div>
-          <StyledHeading>My Projects</StyledHeading>
-          <ProjectDetails projects={projects} />
-        </div>
+        <StyledHeading>My Projects</StyledHeading>
+        <ProjectDetails projects={projects} />
       </StyledProjects>
     </>
   );

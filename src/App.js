@@ -17,7 +17,7 @@ function App() {
   const theme = {
     colors: {
       body: " #fff",
-      nav: light ? "#fff" : "rgb(13, 11, 11);",
+      nav: light ? "#fff" : "rgb(23, 21, 21)",
       heading_text: "#0317fc",
       light_text: light ? "#0317fc" : "#fff",
       banner_btn_text: light ? "#fff" : "#0317fc",

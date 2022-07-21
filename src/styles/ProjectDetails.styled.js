@@ -1,56 +1,80 @@
 import styled from "styled-components";
 
 export const StyledDetails = styled.div`
-  position: relative;
-  padding: 20px;
-  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  width: 70%;
   margin: 0 auto;
-  margin-bottom: 5%;
+  margin-top: 5%;
+  background-color: ${({ theme }) => theme.colors.banner_btn_bg};
+  color: ${({ theme }) => theme.colors.banner_btn_text};
+  border-radius: 10px;
 
   @media screen and (max-width: 1024px) {
     width: 90%;
   }
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledProjectImage = styled.div`
-  width: 40%;
-  border: 7px solid ${({ theme }) => theme.colors.banner_btn_bg};
-  border-radius: 10px;
-
+  flex-basis: 50%;
   img {
+    border-radius: 10px;
+    width: 500px;
+  }
+  @media screen and (max-width: 768px) {
+    img {
+      width: 400px;
+    }
   }
 `;
 
 export const StyledProjectText = styled.div`
-  position: absolute;
-  width: 50%;
-  // height: 250px;
-  border: 7px solid ${({ theme }) => theme.colors.banner_btn_bg};
-  border-radius: 10px;
-  top: 40%;
-  right: 10%;
-  text-align: center;
+  padding: 10px;
+  flex-basis: 40%;
 
   h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   p {
     font-size: 1rem;
+    font-weight: 600;
     margin-top: 10px;
   }
 
   a {
     color: inherit;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     svg {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
 
     &:hover {
-      transform: scale(1.3);
+      transform: scale(1.2);
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+  
+    a {
+            svg {
+        font-size: 1.5rem;
+      }
+  
   }
 `;
 
