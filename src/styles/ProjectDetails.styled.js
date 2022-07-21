@@ -43,7 +43,7 @@ export const StyledProjectText = styled.div`
 
   p {
     font-size: 1rem;
-    font-weight: 600;
+    // font-weight: 600;
     margin-top: 10px;
   }
 

@@ -17,13 +17,13 @@ export const StyledNav = styled.nav`
     a {
       display: block;
       text-decoration: none;
+      color: ${({ theme }) => theme.colors.light_text};
+      font-size: 1.8rem;
+      font-weight: 700;
       p {
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
         font-family: "Fira Code", monospace;
-        font-size: 1.8rem;
         margin-left: 20px;
-        color: ${({ theme }) => theme.colors.light_text};
-        font-weight: 700;
 
         @media (hover: hover) {
           &:hover {
@@ -104,7 +104,7 @@ export const StyledNavLinks = styled.p`
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 2px;
-  padding: 25px 5px;
+  padding: 18px 5px;
   width: 100vw;
   display: inline-block;
   margin: 0 auto;
@@ -114,7 +114,7 @@ export const StyledNavLinks = styled.p`
 
   @media screen and (max-width: 768px) {
     &:first-child {
-      margin-top: 12%;
+      margin-top: 10%;
     }
   }
 

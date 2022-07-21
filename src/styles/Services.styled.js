@@ -68,8 +68,8 @@ export const StyledServiceCards = styled.div`
     }
 
     p {
-      font-size: 1.2rem;
-      letter-spacing: 2px;
+      font-size: 1rem;
+      letter-spacing: 3px;
       margin-top: 5%;
       font-weight: 600;
       color: ${({ theme }) => theme.colors.text_dark};
