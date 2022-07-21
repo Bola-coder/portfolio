@@ -20,7 +20,8 @@ export const StyledHeading = styled.h2`
   }
 
   @media screen and (max-width: 425px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 10px;
     text-align: center;

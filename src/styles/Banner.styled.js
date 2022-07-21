@@ -16,7 +16,7 @@ export const StyledBanner = styled.section`
 
     h1 {
       // margin-top: 3%;
-      font-size: 5rem;
+      font-size: 4.5rem;
       font-weight: 900;
       color: ${({ theme }) => theme.colors.light_text};
     }

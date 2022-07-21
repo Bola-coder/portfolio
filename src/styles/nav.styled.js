@@ -18,7 +18,7 @@ export const StyledNav = styled.nav`
       display: block;
       text-decoration: none;
       color: ${({ theme }) => theme.colors.light_text};
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       font-weight: 700;
       p {
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
