@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContacts = styled.section`
   padding: 20px;
   margin-top: 10vh;
-  padding-top: 100px;
+  padding-top: 50px;
 `;
 
 export const StyledContact = styled.section`
@@ -13,6 +13,7 @@ export const StyledContact = styled.section`
   margin-top: 50px;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    align-items: flex-start;
   }
 `;
 
@@ -68,6 +69,31 @@ export const StyledForm = styled.div`
         border: 2px solid rgb(8, 92, 172);
       }
     } // End of Button
+
+    //Media queries
+    @media screen and (max-width: 768px) {
+      max-width: 600px;
+
+      input,
+      textarea {
+        width: 500px;
+      }
+    } // End of 768px media query
+
+    @media screen and (max-width: 425px) {
+      max-width: 400px;
+      input,
+      textarea {
+        width: 300px;
+      }
+    } // End of 425px media query
+
+    @media screen and (max-width: 320px) {
+      input,
+      textarea {
+        width: 250px;
+      }
+    } // End of 425px media query
   } // End of Form
 `;
 

@@ -42,7 +42,7 @@ const Contact = () => {
         <StyledWidgets>
           <span>
             <FaCity />
-            <p>Abeokuta, Ogun State</p>
+            <p>Ogun State, Nigeria.</p>
           </span>
           <span>
             <FaAddressBook />
