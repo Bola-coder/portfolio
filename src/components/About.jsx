@@ -2,7 +2,7 @@ import React from "react";
 import Resume from "./Resume";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import { AboutContent, StyledAbout } from "../styles/About.styled";
-import myImage from "./../images/bolarinwa.jpg";
+import myImage from "./../images/abolarinwa.jpg";
 import Skills from "./Skills";
 import Work from "./Work";
 import Services from "./Services";
