@@ -12,7 +12,7 @@ const ProjectDetails = ({ projects }) => {
     <>
       {projects
         ? projects.map((project, index) => (
-            <StyledDetails>
+            <StyledDetails key={index}>
               <StyledProjectImage>
                 <img src={project.image} alt="project pics" />
               </StyledProjectImage>
