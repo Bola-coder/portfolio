@@ -4,6 +4,8 @@ import planktops from "./../images/project_images/planktops.png";
 import recipea from "./../images/project_images/recipea.png";
 import texchange from "./../images/project_images/texchange.png";
 import twitterClone from "./../images/project_images/twitter-clone.png";
+import netflixLanding from "./../images/project_images/netflix-landing.png";
+import randGen from "./../images/project_images/randgen.png";
 
 const projects = [
   {
@@ -66,6 +68,26 @@ const projects = [
     description: "A simple website for a furniture / carpentry  business",
     liveLink: "https://planktops.netlify.app/",
     githubLink: "https://github.com/Bola-coder/Vue-Furniture-Website",
+    author: "Ahmed Bolarinwa",
+  },
+
+  {
+    name: "Netflix Landing Page Clone",
+    tags: ["HTML", "CSS", "JS", "CLONE"],
+    image: netflixLanding,
+    description: "A simple clone of netflix landing page",
+    liveLink: "https://bola-coder.github.io/Netflix-Landing-Page-Clone/",
+    githubLink: "  https://github.com/Bola-coder/Netflix-Landing-Page-Clone",
+    author: "Ahmed Bolarinwa",
+  },
+
+  {
+    name: "Random User Generator",
+    tags: ["Vue", "API"],
+    image: randGen,
+    description: "A simple random person generator",
+    liveLink: "https://randgen.netlify.app/",
+    githubLink: "https://github.com/Bola-coder/Vue-random-user-generator",
     author: "Ahmed Bolarinwa",
   },
 ];

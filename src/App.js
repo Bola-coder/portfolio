@@ -13,8 +13,6 @@ import Contact from "./components/Contact";
 function App() {
   const { light } = useContext(LightModeContext);
 
-  // #0bab05
-  console.log(light);
   const theme = {
     colors: {
       body: " #fff",
