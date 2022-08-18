@@ -26,7 +26,7 @@ export const AboutContent = styled.div`
 
   & > span {
     img {
-      width: 400px;
+      width: 350px;
       height: 400px;
       border-radius: 2%;
       margin-left: 30px;
