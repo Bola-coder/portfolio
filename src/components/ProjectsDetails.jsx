@@ -5,6 +5,7 @@ import {
   StyledProjectImage,
   StyledProjectText,
   TagNames,
+  TagName
 } from "../styles/ProjectDetails.styled";
 
 const ProjectDetails = ({ projects }) => {
@@ -27,7 +28,14 @@ const ProjectDetails = ({ projects }) => {
                   <FaArrowAltCircleRight></FaArrowAltCircleRight>
                 </a>
 
-                <TagNames>Tags: {project.tags.toString()}</TagNames>
+                {/* <TagNames>Tags: {project.tags.toString()}</TagNames> */}
+                <TagNames>
+                {
+                  project.tags.map((tag, index) => (
+                    <TagName>{tag}</TagName>
+                  ))
+                }
+                </TagNames>
               </StyledProjectText>
             </StyledDetails>
           ))

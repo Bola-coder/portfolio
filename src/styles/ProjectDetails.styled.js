@@ -78,4 +78,15 @@ export const StyledProjectText = styled.div`
   }
 `;
 
-export const TagNames = styled.p``;
+export const TagNames = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+
+export const TagName = styled.p`
+  padding: 5px;
+  border: 1px solid ${({ theme }) => theme.colors.text_dark};
+  cursor: pointer;
+`;

@@ -32,6 +32,11 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    const {name, email, message} = formDetails;
+    if(!name || !email || !message){
+      alert("Please fill in all fields.");
+      return;
+    }
     console.log(formDetails);
     emailjs
       .send(
