@@ -18,12 +18,13 @@ export const StyledNav = styled.nav`
       display: block;
       text-decoration: none;
       color: ${({ theme }) => theme.colors.light_text};
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       font-weight: 700;
+      margin-left: 20px;
+      letter-spacing: 5px;
       p {
         @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=IBM+Plex+Sans&family=Poppins:wght@500&family=Roboto&family=Yuji+Hentaigana+Akebono&display=swap");
         font-family: "Fira Code", monospace;
-        margin-left: 20px;
 
         @media (hover: hover) {
           &:hover {

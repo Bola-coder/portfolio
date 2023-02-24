@@ -86,7 +86,8 @@ export const TagNames = styled.div`
 `;
 
 export const TagName = styled.p`
-  padding: 5px;
-  border: 1px solid ${({ theme }) => theme.colors.text_dark};
+  padding: 5px 10px;
+  border: 2px solid ${({ theme }) => theme.colors.banner_btn_text};
   cursor: pointer;
+  border-radius: 4px;
 `;
