@@ -1,11 +1,11 @@
 import texbuy from "./../images/project_images/texbuy.png";
 import netflixClone from "./../images/project_images/netflix-clone.png";
-import planktops from "./../images/project_images/planktops.png";
+// import planktops from "./../images/project_images/planktops.png";
 import recipea from "./../images/project_images/recipea.png";
 import texchange from "./../images/project_images/texchange.png";
 import twitterClone from "./../images/project_images/twitter-clone.png";
 import netflixLanding from "./../images/project_images/netflix-landing.png";
-import randGen from "./../images/project_images/randgen.png";
+// import randGen from "./../images/project_images/randgen.png";
 
 const projects = [
   {
