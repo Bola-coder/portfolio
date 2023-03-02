@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import { LightModeContext } from "./components/context/LightModeContext";
+import ScrollToTopProvider from "./components/context/ScrollToTopContext";
 import "./app.css";
 import Contact from "./components/Contact";
 
@@ -32,19 +33,21 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className={light ? "app__light" : "app__dark"}>
-        <GlobalStyle />
-        <Router>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Banner />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/portfolio" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* <Work /> */}
-          </Routes>
-        </Router>
-      </div>
+      <ScrollToTopProvider>
+        <div className={light ? "app__light" : "app__dark"}>
+          <GlobalStyle />
+          <Router>
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<Banner />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              {/* <Work /> */}
+            </Routes>
+          </Router>
+        </div>
+      </ScrollToTopProvider>
     </ThemeProvider>
   );
 }

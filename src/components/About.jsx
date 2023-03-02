@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useScrollToTop } from "./../components/context/ScrollToTopContext";
 import Resume from "./Resume";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import { AboutContent, StyledAbout } from "../styles/About.styled";
@@ -9,6 +10,12 @@ import Services from "./Services";
 
 const About = () => {
   document.title = "Ahmed Bolarinwa | About";
+  const { handleScroll } = useScrollToTop();
+  useEffect(() => {
+    if (window.scrollY > 100) {
+      handleScroll();
+    }
+  }, [handleScroll]);
 
   return (
     <>
@@ -29,7 +36,8 @@ const About = () => {
               confident of my skill as a frontend developer. I have what it
               takes to help transform your business ideas into web applicaions
               that will attract the right customers. Aside coding and building
-              web solutions, I enjoy reading books, cooking, and listening to music.
+              web solutions, I enjoy reading books, cooking, and listening to
+              music.
             </p>
             <Resume />
           </div>

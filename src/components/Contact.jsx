@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useScrollToTop } from "./context/ScrollToTopContext";
 import { StyledHeading } from "../styles/SectionHeader.styled";
 import {
   StyledContacts,
@@ -16,6 +17,13 @@ import {
 import emailjs from "@emailjs/browser";
 const Contact = () => {
   document.title = "Ahmed Bolarinwa | Contact";
+  // Scroll to top
+  const { handleScroll } = useScrollToTop();
+  useEffect(() => {
+    if (window.scrollY > 100) {
+      handleScroll();
+    }
+  }, [handleScroll]);
   const [formDetails, setFormDetails] = useState({
     name: "",
     email: "",
@@ -32,8 +40,8 @@ const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    const {name, email, message} = formDetails;
-    if(!name || !email || !message){
+    const { name, email, message } = formDetails;
+    if (!name || !email || !message) {
       alert("Please fill in all fields.");
       return;
     }
@@ -93,7 +101,8 @@ const Contact = () => {
                 id="comment"
                 name="message"
                 value={message}
-                onChange={handleFormChange}></textarea>
+                onChange={handleFormChange}
+              ></textarea>
             </div>
             <div>
               <button>Send a message</button>
